@@ -35,7 +35,8 @@ fig.add_trace(go.Scatter(x = [dev2_end, dev2_end], y = [0, 0.1], mode = "lines",
 fig.add_trace(go.Scatter(x = [dev3_strt, dev3_strt], y = [0, 0.1], mode = "lines", name = "STDEV 3 START"))
 fig.add_trace(go.Scatter(x = [dev3_end, dev3_end], y = [0, 0.1], mode = "lines", name = "STDEV 3 END"))
 fig.add_trace(go.Scatter(x = [samp_mean, samp_mean], y = [0, 0.1], mode = "lines", name = "SAMPLE MEAN"))
-print(f"The z score is:{(samp_mean - mean)/dev}")
+z_scr=(samp_mean-mean)/dev
+print("The z score is: ", z_scr)
 
 
 fig.show()
